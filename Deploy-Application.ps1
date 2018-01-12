@@ -119,10 +119,10 @@ Try {
 
 		## <Perform Pre-Installation tasks here>
 		If (Test-Path -Path "${envSystem32Directory}\oobe\info\backgrounds" -PathType 'Container') {
-			Write-Log -Message "Removing previous customized backgrounds before continuing." -Severity 1 -Source -Source $deployAppScriptFriendlyName
+			Write-Log -Message "Removing previous customized backgrounds before continuing." -Severity 1 -Source $deployAppScriptFriendlyName
 			Remove-File -Path "${envSystem32Directory}\oobe\info\backgrounds" -Recurse
 		} Else {
-			Write-Log -Message "No previous customized backgrounds found. Continuing to login background customization." -Severity 1 -Source -Source $deployAppScriptFriendlyName
+			Write-Log -Message "No previous customized backgrounds found. Continuing to login background customization." -Severity 1 -Source $deployAppScriptFriendlyName
 		}
 
 		##*===============================================
@@ -209,8 +209,8 @@ Catch {
 # SIG # Begin signature block
 # MIIU4wYJKoZIhvcNAQcCoIIU1DCCFNACAQExDzANBglghkgBZQMEAgEFADB5Bgor
 # BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG
-# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCBWf2TRDD4vmHFp
-# x1hYqfPGSFvXBVNqhoU5WEZUUvVlhqCCD4cwggQUMIIC/KADAgECAgsEAAAAAAEv
+# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCAZ0n77ISUAu+H6
+# pzLbCDZQ6iZllAN1WX0F+JcHsVqSL6CCD4cwggQUMIIC/KADAgECAgsEAAAAAAEv
 # TuFS1zANBgkqhkiG9w0BAQUFADBXMQswCQYDVQQGEwJCRTEZMBcGA1UEChMQR2xv
 # YmFsU2lnbiBudi1zYTEQMA4GA1UECxMHUm9vdCBDQTEbMBkGA1UEAxMSR2xvYmFs
 # U2lnbiBSb290IENBMB4XDTExMDQxMzEwMDAwMFoXDTI4MDEyODEyMDAwMFowUjEL
@@ -297,26 +297,26 @@ Catch {
 # FgNlZHUxGTAXBgoJkiaJk/IsZAEZFgltc3VkZW52ZXIxFTATBgoJkiaJk/IsZAEZ
 # FgV3aW5hZDEZMBcGA1UEAxMQd2luYWQtVk1XQ0EwMS1DQQITfwAAACITuo77mvOv
 # 9AABAAAAIjANBglghkgBZQMEAgEFAKBmMBgGCisGAQQBgjcCAQwxCjAIoAKAAKEC
-# gAAwGQYJKoZIhvcNAQkDMQwGCisGAQQBgjcCAQQwLwYJKoZIhvcNAQkEMSIEINiV
-# QhF8BLZaqLL1MpzljKnc1KP4NjTRZi/8KtnGAb7GMA0GCSqGSIb3DQEBAQUABIIB
-# ABNRlK2gHeaoTtpBQd5khqqz0TyBlqDK8DH2hpVuObGvkKuC8w3Zd/ZRRzuK3Qew
-# jzy3bWxQsUoOGXx0iGwPTmyVOii7LLxC+cNdy1sh8v0iJ0+GrdGyq7sBbGYL5K+i
-# odZhhbTc4bcICT6+b2J8fMjSTtAuhH806R8NWi9EgQMcF4dB8C+q3rM8m8l/i/n2
-# KfTu5fJQEr7kwMfiVNqQzEgvKaLSCRWZ7oS+BCB79gjrjOeh0kUndK9vlAV6Bb9j
-# SvqJFULLCpJvVt/5Mij9QjMv0tLtveIqnSRl0TcWNgxVJihsvL8hHCKBDn2IjIut
-# Rlo95bmj3QhuGbZZQ/KCmQyhggKiMIICngYJKoZIhvcNAQkGMYICjzCCAosCAQEw
+# gAAwGQYJKoZIhvcNAQkDMQwGCisGAQQBgjcCAQQwLwYJKoZIhvcNAQkEMSIEIHQ9
+# YnSIKq/WGg2TPAlB6zRhbho/OW1FpZim26ObVtZ9MA0GCSqGSIb3DQEBAQUABIIB
+# AIGo/6k9UZ2POHBQx850m/Epi4TUZfCOHb3XCVqgj/WawdwoGVLxgdTuyh2IFhyp
+# Ij1V1XLJSxYbzPxxhgzLK/UH3pDS62CsXF0hQ4lAcQyabif3V8ezOJPUslJJtI+x
+# v1krrZaB5mX2XZlqgiBtESKzrQ3uSIKgpaivqYjEu6lxJFoGW9tJJ1kA0lVsJU7H
+# 1r89ZdbVCg2JqS68gMPI/a7RVzOTDBo39msdp1RhVNnYTPeBlx8pzJQAV9LtTZc0
+# R8QuaWWvjiZyXTAn7+l5yQfQRi4orgV46uzgYQzUgZXnkCGXvIieo/teqzpZOjpt
+# YMa2RVtmquKvJcJqlIam6C2hggKiMIICngYJKoZIhvcNAQkGMYICjzCCAosCAQEw
 # aDBSMQswCQYDVQQGEwJCRTEZMBcGA1UEChMQR2xvYmFsU2lnbiBudi1zYTEoMCYG
 # A1UEAxMfR2xvYmFsU2lnbiBUaW1lc3RhbXBpbmcgQ0EgLSBHMgISESHWmadklz7x
 # +EJ+6RnMU0EUMAkGBSsOAwIaBQCggf0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEH
-# ATAcBgkqhkiG9w0BCQUxDxcNMTgwMTEyMTY1MDI4WjAjBgkqhkiG9w0BCQQxFgQU
-# lFKYN5I3kIubkSA7KhflVyznZRUwgZ0GCyqGSIb3DQEJEAIMMYGNMIGKMIGHMIGE
+# ATAcBgkqhkiG9w0BCQUxDxcNMTgwMTEyMTcwNTM0WjAjBgkqhkiG9w0BCQQxFgQU
+# M8IKsxJk0EBzBCmGlTVCBrZdcswwgZ0GCyqGSIb3DQEJEAIMMYGNMIGKMIGHMIGE
 # BBRjuC+rYfWDkJaVBQsAJJxQKTPseTBsMFakVDBSMQswCQYDVQQGEwJCRTEZMBcG
 # A1UEChMQR2xvYmFsU2lnbiBudi1zYTEoMCYGA1UEAxMfR2xvYmFsU2lnbiBUaW1l
 # c3RhbXBpbmcgQ0EgLSBHMgISESHWmadklz7x+EJ+6RnMU0EUMA0GCSqGSIb3DQEB
-# AQUABIIBAJRP1jeUnubMsKv6pvd3Dy65c+PfUClcN++MGII8HKnpEYqqYe8x8a89
-# gkHddKTj1hvSPj8obc2NkCDpN0PF/RdN8mI/dYGqzPXeJAWl+Uq5Kiyl2IBRbUa0
-# NJtnPu//gAAXjqUSYlML1LjcQEYqp1c81GBhlIlOLR47Sey0+m5TNzyvJlWm2rJr
-# F/uQB2d0dBV0+NnDCQ2faTkkjs8Ef8iYygmyQWV4Ug3ugMNYjvPA8pBlA4cyINaw
-# u99gVWB5vfPqc6Krt2hH1O5l1oexA2GsTq8PoxuB6EOgYWlwflZIP3ryteZJe1Rc
-# uY9sW9JSTkuRkCbUKxYXw+VQAsIhjI0=
+# AQUABIIBABMe4UR2gkkaeGIK3tCQnRm89qJqqAftjmp1J1fOHJC3h5FEhQRYSCfI
+# puDE6J0fNnKrnRCB/R3az77g6k3j9VDVD26R7qNljuZZAa1C+TdKy6W06vwl66nn
+# uMz4a7mAaSFFSfxIftXPcadROFllOF8aEGl4IGzNkUns+C1nIs9ZipbIX5rs19f5
+# KNsAkGi49J71qO6oj6Ci3xg3poshZ0RvmKXgY97PEvsd10LIAvqeV7wVJ1EtenwR
+# yEHJ51nmz4g5ZaaSJ7ivES4h7S0cSYNBKpRnojQ0/ySVv55VqgG6oNiYUo5VWcdY
+# iYP2WFMEe4kmBWt/FgfBKd0SppmKAAw=
 # SIG # End signature block
